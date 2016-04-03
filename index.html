@@ -2,26 +2,24 @@
 <html lang='en'>
   <head>
     <meta charset="utf-8">
-    <title>Video Player</title>
   </head>
   <body>
+    <h1>Video Player</h1>
     <div id="container">
-      <h1>HTML5 Player</h1>
       <div id="video-container">
-        <video controls width=1000 preload poster=img/previewimg.png>
+        <video id='videothing' controls width=1000 preload>
           <source src="http://nettuts.s3.amazonaws.com/763_sammyJSIntro/trailer_test.mp4" type="video/mp4">
           <source src="http://nettuts.s3.amazonaws.com/763_sammyJSIntro/trailer_test.ogg" type="video/ogg">
         </video>
         <div id="videoControls">
-          <button id="play" title="Play">&#x25BA; </button>
           <div id="progress">
             <div id="progress_box">
               <span id="play_progress"></span>
             </div>
           </div>
-          <button id="fullScreen" title="FullScreen Toggle"> FS </button>
         </div>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
